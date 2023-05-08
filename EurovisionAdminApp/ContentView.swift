@@ -8,14 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var manager = EurovisionServiceManager()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                NavigationLink(destination: VotesSummaryView(manager: manager)) {
+                    Text("Votes")
+                        .font(.title2)
+                        .bold()
+                        .cornerRadius(20)
+                }
+            }
         }
-        .padding()
     }
 }
 
