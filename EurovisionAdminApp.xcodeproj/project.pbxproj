@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA8D96362A094A38008B74CF /* VoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D96352A094A38008B74CF /* VoteDetailView.swift */; };
 		EAD3A6A42A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6A32A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift */; };
 		EAD3A6A62A08D0CC0085B9D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */; };
 		EAD3A6A82A08D0CF0085B9D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAD3A6A72A08D0CF0085B9D3 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA8D96352A094A38008B74CF /* VoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteDetailView.swift; sourceTree = "<group>"; };
 		EAD3A6A02A08D0CB0085B9D3 /* EurovisionAdminApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurovisionAdminApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD3A6A32A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurovisionAdminAppApp.swift; sourceTree = "<group>"; };
 		EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				EAD3A6A92A08D0CF0085B9D3 /* Preview Content */,
 				EAD3A6B42A08EE650085B9D3 /* EurovisionServiceManager.swift */,
 				EAD3A6B62A08EEAA0085B9D3 /* VoteModel.swift */,
+				EA8D96352A094A38008B74CF /* VoteDetailView.swift */,
 			);
 			path = EurovisionAdminApp;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD3A6B52A08EE650085B9D3 /* EurovisionServiceManager.swift in Sources */,
+				EA8D96362A094A38008B74CF /* VoteDetailView.swift in Sources */,
 				EAD3A6B72A08EEAA0085B9D3 /* VoteModel.swift in Sources */,
 				EAD3A6B32A08D0FB0085B9D3 /* VotesSummaryView.swift in Sources */,
 				EAD3A6A62A08D0CC0085B9D3 /* ContentView.swift in Sources */,

@@ -15,7 +15,18 @@ struct VotesSummaryView: View {
             List {
                 if let votes = manager.votes {
                     ForEach(votes) { vote in
-                        Text(vote.delegate)
+                        NavigationLink(destination: VoteDetailView(vote: vote)) {
+                            Text("\(vote.delegate)(\(vote.country.capitalized))")
+                        }
+                        .swipeActions {
+                            Button(action: {
+                                Task {
+                                    try await manager.delete(delegate: vote.delegate)
+                                }
+                            }) {
+                                Label("Delete", systemImage: "trash.circle.fill")
+                            }
+                        }
                     }
                 }                    
             }
