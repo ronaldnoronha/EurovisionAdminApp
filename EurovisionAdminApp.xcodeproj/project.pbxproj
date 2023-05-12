@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA3465212A0D0F3B005C1254 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465202A0D0F3B005C1254 /* Constants.swift */; };
+		EA3465242A0D137F005C1254 /* TallyCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465232A0D137F005C1254 /* TallyCountryView.swift */; };
+		EA3465262A0D13F0005C1254 /* TallyListOf9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465252A0D13F0005C1254 /* TallyListOf9View.swift */; };
+		EA3465282A0D2679005C1254 /* TallyPoints12View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465272A0D2679005C1254 /* TallyPoints12View.swift */; };
+		EA34652A2A0D2714005C1254 /* TallyScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465292A0D2714005C1254 /* TallyScoreboardView.swift */; };
+		EA34652C2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */; };
+		EA34652E2A0D2BC8005C1254 /* TallyFinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */; };
+		EA3465302A0D326C005C1254 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652F2A0D326C005C1254 /* Scoreboard.swift */; };
+		EA8557B92A0BCE4F005C5214 /* TallyStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */; };
+		EA8557BB2A0BD095005C5214 /* TallyManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */; };
 		EA8D96362A094A38008B74CF /* VoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D96352A094A38008B74CF /* VoteDetailView.swift */; };
 		EAD3A6A42A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6A32A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift */; };
 		EAD3A6A62A08D0CC0085B9D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */; };
@@ -15,9 +25,21 @@
 		EAD3A6B32A08D0FB0085B9D3 /* VotesSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6B22A08D0FB0085B9D3 /* VotesSummaryView.swift */; };
 		EAD3A6B52A08EE650085B9D3 /* EurovisionServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6B42A08EE650085B9D3 /* EurovisionServiceManager.swift */; };
 		EAD3A6B72A08EEAA0085B9D3 /* VoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD3A6B62A08EEAA0085B9D3 /* VoteModel.swift */; };
+		EAD5ED172A0DBF0B00DE67B8 /* Votes.json in Resources */ = {isa = PBXBuildFile; fileRef = EA3465222A0D0F6A005C1254 /* Votes.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA3465202A0D0F3B005C1254 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA3465222A0D0F6A005C1254 /* Votes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Votes.json; sourceTree = "<group>"; };
+		EA3465232A0D137F005C1254 /* TallyCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyCountryView.swift; sourceTree = "<group>"; };
+		EA3465252A0D13F0005C1254 /* TallyListOf9View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyListOf9View.swift; sourceTree = "<group>"; };
+		EA3465272A0D2679005C1254 /* TallyPoints12View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyPoints12View.swift; sourceTree = "<group>"; };
+		EA3465292A0D2714005C1254 /* TallyScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyScoreboardView.swift; sourceTree = "<group>"; };
+		EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyWinnerDeterminedView.swift; sourceTree = "<group>"; };
+		EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyFinalView.swift; sourceTree = "<group>"; };
+		EA34652F2A0D326C005C1254 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyStartView.swift; sourceTree = "<group>"; };
+		EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyManagerView.swift; sourceTree = "<group>"; };
 		EA8D96352A094A38008B74CF /* VoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteDetailView.swift; sourceTree = "<group>"; };
 		EAD3A6A02A08D0CB0085B9D3 /* EurovisionAdminApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EurovisionAdminApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD3A6A32A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EurovisionAdminAppApp.swift; sourceTree = "<group>"; };
@@ -41,6 +63,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA8557B22A0BCDF9005C5214 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAD3A6B62A08EEAA0085B9D3 /* VoteModel.swift */,
+				EA34652F2A0D326C005C1254 /* Scoreboard.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA8557B32A0BCE08005C5214 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EAD5ED182A0E30B000DE67B8 /* Tally Views */,
+				EAD3A6B22A08D0FB0085B9D3 /* VotesSummaryView.swift */,
+				EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */,
+				EA8D96352A094A38008B74CF /* VoteDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EAD3A6972A08D0CB0085B9D3 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +102,15 @@
 		EAD3A6A22A08D0CB0085B9D3 /* EurovisionAdminApp */ = {
 			isa = PBXGroup;
 			children = (
+				EA8557B32A0BCE08005C5214 /* Views */,
+				EA8557B22A0BCDF9005C5214 /* Models */,
 				EAD3A6A32A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift */,
-				EAD3A6B22A08D0FB0085B9D3 /* VotesSummaryView.swift */,
-				EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */,
 				EAD3A6A72A08D0CF0085B9D3 /* Assets.xcassets */,
 				EAD3A6AC2A08D0CF0085B9D3 /* EurovisionAdminApp.entitlements */,
 				EAD3A6A92A08D0CF0085B9D3 /* Preview Content */,
 				EAD3A6B42A08EE650085B9D3 /* EurovisionServiceManager.swift */,
-				EAD3A6B62A08EEAA0085B9D3 /* VoteModel.swift */,
-				EA8D96352A094A38008B74CF /* VoteDetailView.swift */,
+				EA3465202A0D0F3B005C1254 /* Constants.swift */,
+				EA3465222A0D0F6A005C1254 /* Votes.json */,
 			);
 			path = EurovisionAdminApp;
 			sourceTree = "<group>";
@@ -79,6 +121,21 @@
 				EAD3A6AA2A08D0CF0085B9D3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAD5ED182A0E30B000DE67B8 /* Tally Views */ = {
+			isa = PBXGroup;
+			children = (
+				EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */,
+				EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */,
+				EA3465232A0D137F005C1254 /* TallyCountryView.swift */,
+				EA3465252A0D13F0005C1254 /* TallyListOf9View.swift */,
+				EA3465272A0D2679005C1254 /* TallyPoints12View.swift */,
+				EA3465292A0D2714005C1254 /* TallyScoreboardView.swift */,
+				EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */,
+				EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */,
+			);
+			path = "Tally Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD5ED172A0DBF0B00DE67B8 /* Votes.json in Resources */,
 				EAD3A6AB2A08D0CF0085B9D3 /* Preview Assets.xcassets in Resources */,
 				EAD3A6A82A08D0CF0085B9D3 /* Assets.xcassets in Resources */,
 			);
@@ -151,12 +209,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA34652A2A0D2714005C1254 /* TallyScoreboardView.swift in Sources */,
 				EAD3A6B52A08EE650085B9D3 /* EurovisionServiceManager.swift in Sources */,
 				EA8D96362A094A38008B74CF /* VoteDetailView.swift in Sources */,
 				EAD3A6B72A08EEAA0085B9D3 /* VoteModel.swift in Sources */,
+				EA3465282A0D2679005C1254 /* TallyPoints12View.swift in Sources */,
+				EA3465262A0D13F0005C1254 /* TallyListOf9View.swift in Sources */,
 				EAD3A6B32A08D0FB0085B9D3 /* VotesSummaryView.swift in Sources */,
+				EA34652C2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift in Sources */,
+				EA8557B92A0BCE4F005C5214 /* TallyStartView.swift in Sources */,
+				EA8557BB2A0BD095005C5214 /* TallyManagerView.swift in Sources */,
 				EAD3A6A62A08D0CC0085B9D3 /* ContentView.swift in Sources */,
+				EA34652E2A0D2BC8005C1254 /* TallyFinalView.swift in Sources */,
 				EAD3A6A42A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift in Sources */,
+				EA3465242A0D137F005C1254 /* TallyCountryView.swift in Sources */,
+				EA3465212A0D0F3B005C1254 /* Constants.swift in Sources */,
+				EA3465302A0D326C005C1254 /* Scoreboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

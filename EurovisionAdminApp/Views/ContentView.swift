@@ -13,12 +13,26 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
+                
                 NavigationLink(destination: VotesSummaryView(manager: manager)) {
                     Text("Votes")
                         .font(.title2)
                         .bold()
                         .cornerRadius(20)
                 }
+                
+                Spacer()
+                
+                NavigationLink(destination: VotesSummaryView(manager: manager)) {
+                    Text("Tally")
+                        .font(.title2)
+                        .bold()
+                        .cornerRadius(20)
+                }
+
+                
+                
             }
         }
     }

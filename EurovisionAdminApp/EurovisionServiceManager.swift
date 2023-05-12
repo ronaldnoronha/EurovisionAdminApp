@@ -38,6 +38,7 @@ class EurovisionServiceManager: ObservableObject {
         static let api = "https://eurovision.loca.lt"
         static let votes = "/votes"
         static let delete = "/delete"
+        static let stop = "/stop"
     }
     
     func retrieveVotes() async throws {
@@ -69,5 +70,15 @@ class EurovisionServiceManager: ObservableObject {
         votes = response.votes
     }
     
-    func tally() {}
+    func tally() async throws {
+        var url = URLComponents(string: Constants.api)
+        url?.path = Constants.stop
+        
+        guard let url = url?.url else {
+            throw RequestError.invalidURL
+        }
+        
+        try await URLSession.shared.data(from: url)
+        try await retrieveVotes()
+    }
 }
