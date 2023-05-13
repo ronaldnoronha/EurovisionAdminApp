@@ -12,8 +12,16 @@ struct TallyCountryView: View {
     @Binding var presentationState: TallyStates
     var body: some View {
         NavigationStack {
-            Text(country.capitalized)
-                .font(.title)
+            VStack {
+                Image(country)
+                    .resizable()
+                    .frame(maxWidth: 150, maxHeight: 150)
+                Text(country.capitalized)
+                    .font(.title2)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.primary)
+            }
+            
         }
         .navigationTitle("Eurovision calling...")
         .toolbar {

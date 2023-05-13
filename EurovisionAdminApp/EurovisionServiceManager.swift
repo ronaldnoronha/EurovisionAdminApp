@@ -79,8 +79,8 @@ class EurovisionServiceManager: ObservableObject {
             throw RequestError.invalidURL
         }
         
-        try await URLSession.shared.data(from: url)
-        try await retrieveVotes()
+        let (_, _) = try await URLSession.shared.data(from: url)
+        return
     }
     
     func reverseTally() async throws {
@@ -92,6 +92,5 @@ class EurovisionServiceManager: ObservableObject {
         }
         
         try await URLSession.shared.data(from: url)
-        try await retrieveVotes()
     }
 }

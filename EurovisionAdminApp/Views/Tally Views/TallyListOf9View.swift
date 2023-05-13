@@ -13,51 +13,15 @@ struct TallyListOf9View: View {
     var body: some View {
         NavigationStack {
             List {
-                HStack {
-                    Text("Points 10:")
-                    Spacer()
-                    Text("\(vote.points10.capitalized)")
-                }
-                HStack {
-                    Text("Points 8:")
-                    Spacer()
-                    Text("\(vote.points8.capitalized)")
-                }
-                HStack {
-                    Text("Points 7:")
-                    Spacer()
-                    Text("\(vote.points7.capitalized)")
-                }
-                HStack {
-                    Text("Points 6:")
-                    Spacer()
-                    Text("\(vote.points6.capitalized)")
-                }
-                HStack {
-                    Text("Points 5:")
-                    Spacer()
-                    Text("\(vote.points5.capitalized)")
-                }
-                HStack {
-                    Text("Points 4:")
-                    Spacer()
-                    Text("\(vote.points4.capitalized)")
-                }
-                HStack {
-                    Text("Points 3:")
-                    Spacer()
-                    Text("\(vote.points3.capitalized)")
-                }
-                HStack {
-                    Text("Points 2:")
-                    Spacer()
-                    Text("\(vote.points2.capitalized)")
-                }
-                HStack {
-                    Text("Points 1:")
-                    Spacer()
-                    Text("\(vote.points1.capitalized)")
-                }
+                TallyListOf9CellView(points: 10, country: vote.points10)
+                TallyListOf9CellView(points: 8, country: vote.points8)
+                TallyListOf9CellView(points: 7, country: vote.points7)
+                TallyListOf9CellView(points: 6, country: vote.points6)
+                TallyListOf9CellView(points: 5, country: vote.points5)
+                TallyListOf9CellView(points: 4, country: vote.points4)
+                TallyListOf9CellView(points: 3, country: vote.points3)
+                TallyListOf9CellView(points: 2, country: vote.points2)
+                TallyListOf9CellView(points: 1, country: vote.points1)                
             }
         }
         .navigationTitle("\(vote.country.capitalized) votes")

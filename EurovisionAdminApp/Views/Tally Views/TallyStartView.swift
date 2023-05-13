@@ -9,28 +9,29 @@ import SwiftUI
 
 struct TallyStartView: View {
     @ObservedObject var manager: EurovisionServiceManager
+    @State var shouldTransit = false
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Are you sure you want to start Tally, this blocks any more votes from being registered?")
+                Spacer()
                 
-                NavigationLink {
-                    TallyManagerView(votes: manager.votes!.shuffled())
-                } label: {
-                    Button {
-                        Task {
-                            try await manager.tally()
+                Text("Are you sure you want to start Tally, this blocks any more votes from being registered?")
+                    .padding()
+                
+                Spacer()
+                
+                NavigationLink(destination: TallyManagerView(votes: manager.votes?.shuffled() ?? []), isActive: $shouldTransit) {
+                    Text("Tally Votes")
+                        .onTapGesture {
+                            Task {
+                                try await manager.tally()
+                                try await manager.retrieveVotes()
+                                shouldTransit = true
                         }
-                    } label: {
-                        Text("Tally Votes")
                     }
-                    .cornerRadius(20)
-
                 }
-
             }
-            
-            
+            .padding()
         }
     }
 }

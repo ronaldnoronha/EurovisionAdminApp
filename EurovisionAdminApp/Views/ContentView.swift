@@ -24,15 +24,14 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: VotesSummaryView(manager: manager)) {
+                NavigationLink(destination: TallyStartView(manager: manager)) {
                     Text("Tally")
                         .font(.title2)
                         .bold()
                         .cornerRadius(20)
                 }
 
-                
-                
+                Spacer()
             }
         }
     }

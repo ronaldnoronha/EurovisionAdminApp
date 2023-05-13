@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA0A7F982A0FB90200E02854 /* TallyListOf9CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0A7F972A0FB90200E02854 /* TallyListOf9CellView.swift */; };
 		EA3465212A0D0F3B005C1254 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465202A0D0F3B005C1254 /* Constants.swift */; };
 		EA3465242A0D137F005C1254 /* TallyCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465232A0D137F005C1254 /* TallyCountryView.swift */; };
 		EA3465262A0D13F0005C1254 /* TallyListOf9View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3465252A0D13F0005C1254 /* TallyListOf9View.swift */; };
@@ -15,6 +16,7 @@
 		EA34652C2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */; };
 		EA34652E2A0D2BC8005C1254 /* TallyFinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */; };
 		EA3465302A0D326C005C1254 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652F2A0D326C005C1254 /* Scoreboard.swift */; };
+		EA8363172A0F7C9C00FA2678 /* VoteDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8363162A0F7C9C00FA2678 /* VoteDetailCellView.swift */; };
 		EA8557B92A0BCE4F005C5214 /* TallyStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */; };
 		EA8557BB2A0BD095005C5214 /* TallyManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */; };
 		EA8D96362A094A38008B74CF /* VoteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8D96352A094A38008B74CF /* VoteDetailView.swift */; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA0A7F972A0FB90200E02854 /* TallyListOf9CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyListOf9CellView.swift; sourceTree = "<group>"; };
 		EA3465202A0D0F3B005C1254 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA3465222A0D0F6A005C1254 /* Votes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Votes.json; sourceTree = "<group>"; };
 		EA3465232A0D137F005C1254 /* TallyCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyCountryView.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyWinnerDeterminedView.swift; sourceTree = "<group>"; };
 		EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyFinalView.swift; sourceTree = "<group>"; };
 		EA34652F2A0D326C005C1254 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		EA8363162A0F7C9C00FA2678 /* VoteDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteDetailCellView.swift; sourceTree = "<group>"; };
 		EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyStartView.swift; sourceTree = "<group>"; };
 		EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyManagerView.swift; sourceTree = "<group>"; };
 		EA8D96352A094A38008B74CF /* VoteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteDetailView.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				EAD3A6B22A08D0FB0085B9D3 /* VotesSummaryView.swift */,
 				EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */,
 				EA8D96352A094A38008B74CF /* VoteDetailView.swift */,
+				EA8363162A0F7C9C00FA2678 /* VoteDetailCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 				EA3465292A0D2714005C1254 /* TallyScoreboardView.swift */,
 				EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */,
 				EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */,
+				EA0A7F972A0FB90200E02854 /* TallyListOf9CellView.swift */,
 			);
 			path = "Tally Views";
 			sourceTree = "<group>";
@@ -221,7 +227,9 @@
 				EA8557BB2A0BD095005C5214 /* TallyManagerView.swift in Sources */,
 				EAD3A6A62A08D0CC0085B9D3 /* ContentView.swift in Sources */,
 				EA34652E2A0D2BC8005C1254 /* TallyFinalView.swift in Sources */,
+				EA0A7F982A0FB90200E02854 /* TallyListOf9CellView.swift in Sources */,
 				EAD3A6A42A08D0CC0085B9D3 /* EurovisionAdminAppApp.swift in Sources */,
+				EA8363172A0F7C9C00FA2678 /* VoteDetailCellView.swift in Sources */,
 				EA3465242A0D137F005C1254 /* TallyCountryView.swift in Sources */,
 				EA3465212A0D0F3B005C1254 /* Constants.swift in Sources */,
 				EA3465302A0D326C005C1254 /* Scoreboard.swift in Sources */,
@@ -350,6 +358,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = EurovisionAdminApp/EurovisionAdminApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -359,6 +368,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -381,6 +391,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = EurovisionAdminApp/EurovisionAdminApp.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -390,6 +401,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",

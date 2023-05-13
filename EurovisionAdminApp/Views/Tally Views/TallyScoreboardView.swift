@@ -19,6 +19,9 @@ struct TallyScoreboardView: View {
             List {
                 ForEach(keys, id:\.self) { key in
                     HStack {
+                        Image(key)
+                            .resizable()
+                            .frame(maxWidth: 50, maxHeight: 50)
                         Text("\(key.capitalized)")
                         Spacer()
                         Text("\(scoreboard.scores[key]!) points")

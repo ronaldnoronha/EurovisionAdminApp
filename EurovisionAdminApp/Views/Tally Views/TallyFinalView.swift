@@ -15,11 +15,18 @@ struct TallyFinalView: View {
         NavigationStack {
             Section {
                 VStack {
-                    Text("WINNER")
-                        .font(.title)
+                    
                     HStack {
+                        Image(keys[0])
+                            .resizable()
+                            .frame(maxWidth: 75, maxHeight: 75)
                         Text("\(keys[0].capitalized)")
                             .font(.title)
+                        Spacer()
+                        Text("WINNER")
+                            .font(.title)
+                            .fontWeight(.heavy)
+                            .foregroundStyle(.blue.gradient)
                         Spacer()
                         Text("\(scoreboard.scores[keys[0]]!) points")
                             .font(.title)
@@ -32,6 +39,9 @@ struct TallyFinalView: View {
                 List {
                     ForEach(keys[1...], id:\.self) { key in
                         HStack {
+                            Image(key)
+                                .resizable()
+                                .frame(maxWidth: 50, maxHeight: 50)
                             Text("\(key.capitalized)")
                             Spacer()
                             Text("\(scoreboard.scores[key]!) points")

@@ -13,7 +13,13 @@ struct TallyPoints12View: View {
     var isFinalVote: Bool
     var body: some View {
         NavigationStack {
+            Image(vote.points12)
+                .resizable()
+                .frame(maxWidth: 150, maxHeight: 150)
             Text(vote.points12.capitalized)
+                .font(.title2)
+                .fontWeight(.heavy)
+                .foregroundColor(.primary)
         }
         .navigationTitle("\(vote.country.capitalized) douze points go to")
         .toolbar {

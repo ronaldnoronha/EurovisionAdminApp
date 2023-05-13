@@ -16,7 +16,12 @@ struct VotesSummaryView: View {
                 if let votes = manager.votes {
                     ForEach(votes) { vote in
                         NavigationLink(destination: VoteDetailView(vote: vote)) {
-                            Text("\(vote.delegate)(\(vote.country.capitalized))")
+                            HStack {
+                                Text("\(vote.delegate)(\(vote.country.capitalized))")
+                                Image(vote.country)
+                                    .resizable()
+                                    .frame(maxWidth: 50, maxHeight: 50)
+                            }
                         }
                         .swipeActions {
                             Button(action: {

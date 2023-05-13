@@ -11,17 +11,17 @@ struct VoteDetailView: View {
     let vote: Vote
     var body: some View {
         NavigationStack {
-            VStack {
-                Text("12 points: \(vote.points12.capitalized)")
-                Text("10 points: \(vote.points10.capitalized)")
-                Text("8 points: \(vote.points8.capitalized)")
-                Text("7 points: \(vote.points7.capitalized)")
-                Text("6 points: \(vote.points6.capitalized)")
-                Text("5 points: \(vote.points5.capitalized)")
-                Text("4 points: \(vote.points4.capitalized)")
-                Text("3 points: \(vote.points3.capitalized)")
-                Text("2 points: \(vote.points2.capitalized)")
-                Text("1 point: \(vote.points1.capitalized)")
+            List {
+                VoteDetailCellView(points: 12, country: vote.points12)
+                VoteDetailCellView(points: 10, country: vote.points10)
+                VoteDetailCellView(points: 8, country: vote.points8)
+                VoteDetailCellView(points: 7, country: vote.points7)
+                VoteDetailCellView(points: 6, country: vote.points6)
+                VoteDetailCellView(points: 5, country: vote.points5)
+                VoteDetailCellView(points: 4, country: vote.points4)
+                VoteDetailCellView(points: 3, country: vote.points3)
+                VoteDetailCellView(points: 2, country: vote.points2)
+                VoteDetailCellView(points: 1, country: vote.points1)
             }
         }
         .navigationTitle(vote.delegate.capitalized)
