@@ -39,6 +39,7 @@ class EurovisionServiceManager: ObservableObject {
         static let votes = "/votes"
         static let delete = "/delete"
         static let stop = "/stop"
+        static let reverseStop = "/reversestop"
     }
     
     func retrieveVotes() async throws {
@@ -73,6 +74,18 @@ class EurovisionServiceManager: ObservableObject {
     func tally() async throws {
         var url = URLComponents(string: Constants.api)
         url?.path = Constants.stop
+        
+        guard let url = url?.url else {
+            throw RequestError.invalidURL
+        }
+        
+        try await URLSession.shared.data(from: url)
+        try await retrieveVotes()
+    }
+    
+    func reverseTally() async throws {
+        var url = URLComponents(string: Constants.api)
+        url?.path = Constants.reverseStop
         
         guard let url = url?.url else {
             throw RequestError.invalidURL

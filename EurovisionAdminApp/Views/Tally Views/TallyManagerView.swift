@@ -23,7 +23,6 @@ struct TallyManagerView: View {
     @State var presentationState: TallyStates = TallyStates.country
     @State var scoreboard: Scoreboard = Scoreboard()
     
-    
     var body: some View {
         NavigationStack {
             VStack {
@@ -33,7 +32,7 @@ struct TallyManagerView: View {
                 case .listOf9:
                     TallyListOf9View(vote: votes[indexOfCountry], presentationState: $presentationState)
                 case .points12:
-                    TallyPoints12View(vote: votes[indexOfCountry], presentationState: $presentationState)
+                    TallyPoints12View(vote: votes[indexOfCountry], presentationState: $presentationState, isFinalVote: indexOfCountry == votes.count-1)
                         .onAppear {
                             scoreboard.addVotes(vote: votes[indexOfCountry])
                         }
@@ -42,7 +41,7 @@ struct TallyManagerView: View {
                 case .winnerDetermined:
                     TallyWinnerDeterminedView()
                 case .finalTally:
-                    TallyFinalView()
+                    TallyFinalView(scoreboard: scoreboard)
                 }
             }
         }
