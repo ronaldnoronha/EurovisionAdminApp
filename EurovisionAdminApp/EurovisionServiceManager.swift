@@ -35,7 +35,7 @@ class EurovisionServiceManager: ObservableObject {
     @Published var votes: [Vote]?
     
     enum Constants {
-        static let api = "https://eurovision.loca.lt"
+        static let api = "https://94b0-111-220-61-208.ngrok-free.app"
         static let votes = "/votes"
         static let delete = "/delete"
         static let stop = "/stop"

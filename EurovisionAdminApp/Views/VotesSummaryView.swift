@@ -12,28 +12,37 @@ struct VotesSummaryView: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                if let votes = manager.votes {
-                    ForEach(votes) { vote in
-                        NavigationLink(destination: VoteDetailView(vote: vote)) {
-                            HStack {
-                                Text("\(vote.delegate)(\(vote.country.capitalized))")
-                                Image(vote.country)
-                                    .resizable()
-                                    .frame(maxWidth: 50, maxHeight: 50)
-                            }
-                        }
-                        .swipeActions {
-                            Button(action: {
-                                Task {
-                                    try await manager.delete(delegate: vote.delegate)
+            
+            ZStack {
+                Image("eurovision")
+                    .resizable()
+                    .frame(maxWidth: 900, maxHeight: 900)
+                    .opacity(0.25)
+            
+                List {
+                    if let votes = manager.votes {
+                        ForEach(votes) { vote in
+                            NavigationLink(destination: VoteDetailView(vote: vote)) {
+                                HStack {
+                                    Text("\(vote.delegate)(\(vote.country.capitalized))")
+                                    Image(vote.country)
+                                        .resizable()
+                                        .frame(maxWidth: 50, maxHeight: 50)
                                 }
-                            }) {
-                                Label("Delete", systemImage: "trash.circle.fill")
+                            }
+                            .swipeActions {
+                                Button(action: {
+                                    Task {
+                                        try await manager.delete(delegate: vote.delegate)
+                                    }
+                                }) {
+                                    Label("Delete", systemImage: "trash.circle.fill")
+                                }
                             }
                         }
                     }
-                }                    
+                }
+                .opacity(0.85)
             }
         }
         .onAppear {

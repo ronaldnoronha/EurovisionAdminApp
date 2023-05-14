@@ -12,14 +12,22 @@ struct TallyCountryView: View {
     @Binding var presentationState: TallyStates
     var body: some View {
         NavigationStack {
-            VStack {
-                Image(country)
+            ZStack {
+                Image("eurovision").resizable()
                     .resizable()
-                    .frame(maxWidth: 150, maxHeight: 150)
-                Text(country.capitalized)
-                    .font(.title2)
-                    .fontWeight(.heavy)
-                    .foregroundColor(.primary)
+                    .frame(maxWidth: 900, maxHeight: 900)
+                    .opacity(0.25)
+                
+                VStack {
+                    Image(country)
+                        .resizable()
+                        .frame(maxWidth: 150, maxHeight: 150)
+                    Text(country.capitalized)
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.primary)
+                }
+                .opacity(0.85)
             }
             
         }

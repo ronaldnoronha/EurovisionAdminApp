@@ -11,17 +11,25 @@ struct VoteDetailView: View {
     let vote: Vote
     var body: some View {
         NavigationStack {
-            List {
-                VoteDetailCellView(points: 12, country: vote.points12)
-                VoteDetailCellView(points: 10, country: vote.points10)
-                VoteDetailCellView(points: 8, country: vote.points8)
-                VoteDetailCellView(points: 7, country: vote.points7)
-                VoteDetailCellView(points: 6, country: vote.points6)
-                VoteDetailCellView(points: 5, country: vote.points5)
-                VoteDetailCellView(points: 4, country: vote.points4)
-                VoteDetailCellView(points: 3, country: vote.points3)
-                VoteDetailCellView(points: 2, country: vote.points2)
-                VoteDetailCellView(points: 1, country: vote.points1)
+            ZStack {
+                Image("eurovision")
+                    .resizable()
+                    .frame(maxWidth: 900, maxHeight: 900)
+                    .opacity(0.25)
+                
+                List {
+                    VoteDetailCellView(points: 12, country: vote.points12)
+                    VoteDetailCellView(points: 10, country: vote.points10)
+                    VoteDetailCellView(points: 8, country: vote.points8)
+                    VoteDetailCellView(points: 7, country: vote.points7)
+                    VoteDetailCellView(points: 6, country: vote.points6)
+                    VoteDetailCellView(points: 5, country: vote.points5)
+                    VoteDetailCellView(points: 4, country: vote.points4)
+                    VoteDetailCellView(points: 3, country: vote.points3)
+                    VoteDetailCellView(points: 2, country: vote.points2)
+                    VoteDetailCellView(points: 1, country: vote.points1)
+                }
+                .opacity(0.85)
             }
         }
         .navigationTitle(vote.delegate.capitalized)

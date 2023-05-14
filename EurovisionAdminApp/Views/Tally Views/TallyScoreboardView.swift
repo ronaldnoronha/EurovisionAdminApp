@@ -16,18 +16,27 @@ struct TallyScoreboardView: View {
         let keys = scoreboard.scores.sorted { $0.1 > $1.1 }.map { $0.0 }
         
         NavigationStack {
-            List {
-                ForEach(keys, id:\.self) { key in
-                    HStack {
-                        Image(key)
-                            .resizable()
-                            .frame(maxWidth: 50, maxHeight: 50)
-                        Text("\(key.capitalized)")
-                        Spacer()
-                        Text("\(scoreboard.scores[key]!) points")
+            ZStack {
+                Image("eurovision").resizable()
+                    .resizable()
+                    .frame(maxWidth: 900, maxHeight: 900)
+                    .opacity(0.25)
+                
+                List {
+                    ForEach(keys, id:\.self) { key in
+                        HStack {
+                            Image(key)
+                                .resizable()
+                                .frame(maxWidth: 50, maxHeight: 50)
+                            Text("\(key.capitalized)")
+                            Spacer()
+                            Text("\(scoreboard.scores[key]!) points")
+                        }
                     }
                 }
+                .opacity(0.85)
             }
+            
         }
         .navigationTitle("Scoreboard")
         .toolbar {

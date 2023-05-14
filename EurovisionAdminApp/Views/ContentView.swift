@@ -12,26 +12,34 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Spacer()
+            ZStack {
+                Image("eurovision").resizable()
+                    .resizable()
+                    .frame(maxWidth: 900, maxHeight: 900)
+                    .opacity(0.25)
                 
-                NavigationLink(destination: VotesSummaryView(manager: manager)) {
-                    Text("Votes")
-                        .font(.title2)
-                        .bold()
-                        .cornerRadius(20)
+                VStack {
+                    Spacer()
+                    
+                    NavigationLink(destination: VotesSummaryView(manager: manager)) {
+                        Text("Votes")
+                            .font(.title2)
+                            .bold()
+                            .cornerRadius(20)
+                    }
+                    
+                    Spacer()
+                    
+                    NavigationLink(destination: TallyStartView(manager: manager)) {
+                        Text("Tally")
+                            .font(.title2)
+                            .bold()
+                            .cornerRadius(20)
+                    }
+                    
+                    Spacer()
                 }
-                
-                Spacer()
-                
-                NavigationLink(destination: TallyStartView(manager: manager)) {
-                    Text("Tally")
-                        .font(.title2)
-                        .bold()
-                        .cornerRadius(20)
-                }
-
-                Spacer()
+                .opacity(0.85)
             }
         }
     }

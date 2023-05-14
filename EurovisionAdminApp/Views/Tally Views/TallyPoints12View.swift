@@ -13,13 +13,23 @@ struct TallyPoints12View: View {
     var isFinalVote: Bool
     var body: some View {
         NavigationStack {
-            Image(vote.points12)
-                .resizable()
-                .frame(maxWidth: 150, maxHeight: 150)
-            Text(vote.points12.capitalized)
-                .font(.title2)
-                .fontWeight(.heavy)
-                .foregroundColor(.primary)
+            ZStack {
+                Image("eurovision").resizable()
+                    .resizable()
+                    .frame(maxWidth: 900, maxHeight: 900)
+                    .opacity(0.25)
+                
+                VStack {
+                    Image(vote.points12)
+                        .resizable()
+                        .frame(maxWidth: 150, maxHeight: 150)
+                    Text(vote.points12.capitalized)
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .foregroundColor(.primary)
+                }
+                .opacity(0.85)
+            }
         }
         .navigationTitle("\(vote.country.capitalized) douze points go to")
         .toolbar {
