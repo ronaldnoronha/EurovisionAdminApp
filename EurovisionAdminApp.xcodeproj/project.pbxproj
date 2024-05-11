@@ -16,6 +16,8 @@
 		EA34652C2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */; };
 		EA34652E2A0D2BC8005C1254 /* TallyFinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */; };
 		EA3465302A0D326C005C1254 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA34652F2A0D326C005C1254 /* Scoreboard.swift */; };
+		EA5A708C2BEFA356004F25A9 /* DelegateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A708B2BEFA356004F25A9 /* DelegateModel.swift */; };
+		EA5A708E2BEFAB94004F25A9 /* DelegateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5A708D2BEFAB94004F25A9 /* DelegateView.swift */; };
 		EA8363172A0F7C9C00FA2678 /* VoteDetailCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8363162A0F7C9C00FA2678 /* VoteDetailCellView.swift */; };
 		EA8557B92A0BCE4F005C5214 /* TallyStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */; };
 		EA8557BB2A0BD095005C5214 /* TallyManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */; };
@@ -41,6 +43,8 @@
 		EA34652B2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyWinnerDeterminedView.swift; sourceTree = "<group>"; };
 		EA34652D2A0D2BC8005C1254 /* TallyFinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyFinalView.swift; sourceTree = "<group>"; };
 		EA34652F2A0D326C005C1254 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		EA5A708B2BEFA356004F25A9 /* DelegateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateModel.swift; sourceTree = "<group>"; };
+		EA5A708D2BEFAB94004F25A9 /* DelegateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegateView.swift; sourceTree = "<group>"; };
 		EA8363162A0F7C9C00FA2678 /* VoteDetailCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoteDetailCellView.swift; sourceTree = "<group>"; };
 		EA8557B82A0BCE4F005C5214 /* TallyStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyStartView.swift; sourceTree = "<group>"; };
 		EA8557BA2A0BD095005C5214 /* TallyManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TallyManagerView.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 			children = (
 				EAD3A6B62A08EEAA0085B9D3 /* VoteModel.swift */,
 				EA34652F2A0D326C005C1254 /* Scoreboard.swift */,
+				EA5A708B2BEFA356004F25A9 /* DelegateModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -85,6 +90,7 @@
 				EAD3A6A52A08D0CC0085B9D3 /* ContentView.swift */,
 				EA8D96352A094A38008B74CF /* VoteDetailView.swift */,
 				EA8363162A0F7C9C00FA2678 /* VoteDetailCellView.swift */,
+				EA5A708D2BEFAB94004F25A9 /* DelegateView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -224,6 +230,8 @@
 				EA3465282A0D2679005C1254 /* TallyPoints12View.swift in Sources */,
 				EA3465262A0D13F0005C1254 /* TallyListOf9View.swift in Sources */,
 				EAD3A6B32A08D0FB0085B9D3 /* VotesSummaryView.swift in Sources */,
+				EA5A708E2BEFAB94004F25A9 /* DelegateView.swift in Sources */,
+				EA5A708C2BEFA356004F25A9 /* DelegateModel.swift in Sources */,
 				EA34652C2A0D2BAB005C1254 /* TallyWinnerDeterminedView.swift in Sources */,
 				EA8557B92A0BCE4F005C5214 /* TallyStartView.swift in Sources */,
 				EA8557BB2A0BD095005C5214 /* TallyManagerView.swift in Sources */,

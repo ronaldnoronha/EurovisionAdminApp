@@ -33,15 +33,31 @@ struct VotesResponse: Codable {
 
 class EurovisionServiceManager: ObservableObject {
     @Published var votes: [Vote]?
+    @Published var delegates: [Delegate]?
     
     enum Constants {
-        static let api = "https://94b0-111-220-61-208.ngrok-free.app"
+        static let api = "https://8a53-122-150-149-49.ngrok-free.app"
+        static let delegates = "/delegates"
         static let votes = "/votes"
         static let delete = "/delete"
         static let stop = "/stop"
         static let reverseStop = "/reversestop"
     }
     
+    @MainActor
+    func retrieveDelegates() async throws {
+        var url = URLComponents(string: Constants.api)
+        url?.path = Constants.delegates
+        
+        guard let url = url?.url else {
+            throw RequestError.invalidURL
+        }
+        
+        let (data, _) = try await URLSession.shared.data(from: url)
+        delegates = try JSONDecoder().decode([Delegate].self, from: data)
+    }
+    
+    @MainActor
     func retrieveVotes() async throws {
         var url = URLComponents(string: Constants.api)
         url?.path = Constants.votes

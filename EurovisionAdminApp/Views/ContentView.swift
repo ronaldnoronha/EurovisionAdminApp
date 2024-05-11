@@ -30,6 +30,16 @@ struct ContentView: View {
                     
                     Spacer()
                     
+                    NavigationLink(destination: DelegateView(manager: manager)) {
+                        Text("Delegates")
+                            .font(.title2)
+                            .bold()
+                            .cornerRadius(20)
+                    }
+
+                    
+                    Spacer()
+                    
                     NavigationLink(destination: TallyStartView(manager: manager)) {
                         Text("Tally")
                             .font(.title2)
